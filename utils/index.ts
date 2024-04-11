@@ -57,7 +57,7 @@ export const deleteSearchParams = (type: string) => {
     return newPathname;
 };
 
-export async function fetchCars(filters?: FilterProps) {
+export async function fetchCars(filters: FilterProps) {
     const { manufacturer, year, model, limit, fuel } = filters;
 
     // Set the required headers for the API request
